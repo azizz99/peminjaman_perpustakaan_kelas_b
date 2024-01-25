@@ -81,6 +81,10 @@ class DataPinjam {
   User? user;
   Book? book;
 
+  get length => null;
+
+  get peminjam => null;
+
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['id'] = id;
