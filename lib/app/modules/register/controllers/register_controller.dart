@@ -11,7 +11,7 @@ class RegisterController extends GetxController {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   final TextEditingController namaController = TextEditingController();
   final TextEditingController usernameController = TextEditingController();
-  final TextEditingController teleponController = TextEditingController();
+  final TextEditingController telpController = TextEditingController();
   final TextEditingController alamatController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
@@ -41,9 +41,9 @@ class RegisterController extends GetxController {
             data: {
               "nama": namaController.text.toString(),
               "username": usernameController.text.toString(),
-              "telepon": teleponController.text.toString(),
+              "telp": telpController.text.toString(),
               "alamat": alamatController.text.toString(),
-              "passowrd": passwordController.text.toString(),
+              "password": passwordController.text.toString(),
             });
         if (response.statusCode == 201) {
           Get.toNamed(Routes.LOGIN);

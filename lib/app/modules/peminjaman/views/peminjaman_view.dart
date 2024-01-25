@@ -10,7 +10,7 @@ class PeminjamanView extends GetView<PeminjamanController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PeminjamanView'),
+        title: Text('Pinjam Buku ${Get.parameters['judul'].toString()}'),
         centerTitle: true,
       ),
       body: const Center(

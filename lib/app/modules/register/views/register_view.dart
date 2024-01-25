@@ -39,7 +39,7 @@ class RegisterView extends GetView<RegisterController> {
                 },
               ),
               TextFormField(
-                controller: controller.teleponController,
+                controller: controller.telpController,
                 decoration: InputDecoration(hintText: "Masukkan No Telepon"),
                 validator: (value){
                   if (value!.isEmpty){
